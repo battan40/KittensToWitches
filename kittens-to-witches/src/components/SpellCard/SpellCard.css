@@ -9,3 +9,10 @@
   box-shadow: 8px 11px 20px 5px #86898a;
   margin: 3%;
 }
+
+.spell {
+width: 100%;
+height: auto;
+margin-bottom:2%;
+border-radius: 14%;
+}
