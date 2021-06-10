@@ -14,5 +14,14 @@
 width: 100%;
 height: auto;
 margin-bottom:2%;
-border-radius: 14%;
+border-radius: 13%;
+}
+
+.love-button {
+  display: flex;
+  margin-top: 2%;
+  border-radius: 15%;
+  padding: 2%;
+  width: fit-content;
+  background-color: #fbf1e6;
 }
