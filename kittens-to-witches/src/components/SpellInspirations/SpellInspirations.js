@@ -1,10 +1,11 @@
 import React from 'react';
+import SpellCard from '../SpellCard/SpellCard'
 import './spellInspirations.css';
 
 const SpellInspirations = () => {
   return (
     <section className='spell-box'>
-      <p>This moments spell: I am safe;</p>
+      <SpellCard />
     </section>
   )
 }
