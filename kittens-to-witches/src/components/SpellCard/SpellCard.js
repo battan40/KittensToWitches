@@ -4,8 +4,11 @@ import './spellCard.css'
 const SpellCard = () => {
   return(
     <article className='card'>
-      <p className='spell'>This moments spell: I am safe;</p>
-      <button className='love-button'>Favorite</button>
+      <a className='cat-pic'></a>
+      <p className='ronspiration'></p>
+      <h2 className='invocation'>Cast✨</h2>
+      <p className='spell'>I am safe</p>
+      <button className='love-button'>Keep 🪄</button>
     </article>
   )
 }
