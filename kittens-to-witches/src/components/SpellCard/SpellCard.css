@@ -7,6 +7,16 @@
   margin: 3%;
 }
 
+.cat-pic {
+  width: 100%;
+  border-radius: 50%;
+  color: #38453c;
+}
+
+.ronspiration {
+  color: #2d3730;
+}
+
 .invocation {
   color: #2d3730;
   font-family: 'Coming Soon', cursive;
