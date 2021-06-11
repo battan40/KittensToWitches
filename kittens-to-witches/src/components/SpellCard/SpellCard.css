@@ -1,0 +1,45 @@
+.card {
+  border-radius: 2em;
+  border: 3px solid #38453c;
+  padding: 10px;
+  width: 12rem;
+  box-shadow: 8px 11px 20px 5px #86898a;
+  margin: 3%;
+}
+
+.cat-pic {
+  width: 100%;
+  border-radius: 50%;
+  color: #38453c;
+}
+
+.ronspiration {
+  color: #2d3730;
+}
+
+.invocation {
+  color: #2d3730;
+  font-family: 'Coming Soon', cursive;
+}
+
+.spell {
+display: flex;
+flex-direction: column;
+color: #38453c;
+width: 100%;
+height: auto;
+margin-bottom:1vw;
+font-family: 'Hammersmith One', sans-serif;
+margin-top: 1vw;
+}
+
+.love-button {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1vw;
+  border-radius: 1.7em;
+  padding: 2%;
+  width: fit-content;
+  background-color: #fbf1e6;
+  font-family: 'Coming Soon', cursive;
+}
