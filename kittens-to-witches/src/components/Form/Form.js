@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { fetchKittens, fetchSwansonQuotes } from '../../utils/apiCalls'
 import './form.css';
 
 class Form extends Component {
@@ -17,7 +18,7 @@ class Form extends Component {
     event.target.value})
   }
 
-  submitSpell = (event) => {
+  sendSpell = (event) => {
     const newSpell = {
       id: this.state.id,
       title: this.state.title,
@@ -31,10 +32,32 @@ class Form extends Component {
   }
 
   render() {
+    console.log(this.state)
     return(
-      <form>
-        <input>
+      <form className='form-box'>
+        <input
+          className='title-input'
+          type='text'
+          placeholder='Name Your Spell'
+          name='name'
+          value={this.state.title}
+          onChange={(event) => this.handleChange(event)}
+        />
+
+          <input
+            className='spell-composition'
+            type='text'
+            placeholder='Compose Spell'
+            name='compose'
+            value={this.state.description}
+            onChange={(event) => this.handleChange(event)}
+          />
+
+          <button className='send-spell' type='button' onClick={(event) => this.sendSpell(event)}>Send Spell</button>
+
       </form>
     )
   }
 }
+
+export default Form;
