@@ -1,12 +1,13 @@
 import React from 'react';
 import './spellCard.css'
 
-const SpellCard = () => {
+const SpellCard = ({ kittenFamiliar, swanspiration }) => {
   return(
     <article className='card'>
-      <a className='cat-pic'></a>
-      <p className='ronspiration'></p>
-      <h2 className='invocation'>Cast✨</h2>
+      <h2 className='title'></h2>
+      <img className='cat-pic' src={kittenFamiliar} alt='Adorable kitten familiar'/>
+      <p className='ronspiration'>{swanspiration}</p>
+      <h3 className='invocation'>Cast✨</h3>
       <p className='spell'>I am safe</p>
       <button className='love-button'>Keep 🪄</button>
     </article>
