@@ -2,6 +2,7 @@ import React from 'react';
 import SpellCard from '../SpellCard/SpellCard'
 import './spellInspirations.css';
 
+
 const SpellInspirations = ({ spells }) => {
 
   const cardDisplay = spells.map(spell => {

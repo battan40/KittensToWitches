@@ -1,0 +1,33 @@
+
+.form-box {
+display: flex;
+align-items: flex-end;
+align-self: baseline;
+
+}
+
+.title-input {
+  margin: 3%;
+  width: 35%;
+  border: 2px solid #38453c;
+  border-radius: 1.5em;
+  font-size: 15px;
+  padding: 1%;
+  color: #38453c;
+  background-color: #fbf1e6;
+}
+
+.send-spell {
+  border-radius: 1.7em;
+  width: fit-content;
+  background-color: #fbf1e6;
+  font-family: 'Coming Soon', cursive;
+}
+
+.spell-composition {
+  width: 15rem;
+  border: 2px solid #38453c;
+  height: 6rem;
+  border-radius: 2em;
+  background-color: #fbf1e6;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import SpellInspirations from '../SpellInspirations/SpellInspirations';
+import Form from '../Form/Form'
+import { Route } from 'react-router-dom'
 import { fetchKittens, fetchSwansonQuotes } from '../../utils/apiCalls'
 import background from '../../assets/enchantedForest.png'
 import './App.css';
@@ -14,6 +16,7 @@ class App extends Component{
   }
 
   addSpell = (newSpell) => {
+
     this.setState({ spells: [...this.state.spells, newSpell]})
   }
 
@@ -33,7 +36,13 @@ class App extends Component{
     return (
       <main className='App' style={{ backgroundImage: `url(${background})`}}>
         <h1 className='app-title'>Kittens To Witches</h1>
-        <SpellInspirations spells={this.state.spells}/>
+        <Form
+          addSpell={this.addSpell}
+        />
+        {this.state.error && <h2>{this.state.error}</h2>}
+        <SpellInspirations
+          spells={this.state.spells}
+        />
       </main>
     );
   }
