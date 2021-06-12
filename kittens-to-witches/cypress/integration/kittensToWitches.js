@@ -32,5 +32,11 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.ronspiration').should('contain', 'I')
   })
 
+  it('Should have a place to enter spells', () => {
+    cy.get('form').find('input').should('be.visible')
+      .get('form input[type=text]').should('be.visible')
+      .get('.spell-composition').should('be.visible')
+      .get('.send-spell').should('be.visible')
+  })
 
 })
