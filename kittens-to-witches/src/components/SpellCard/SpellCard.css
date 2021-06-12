@@ -5,6 +5,12 @@
   width: 12rem;
   box-shadow: 8px 11px 20px 5px #86898a;
   margin: 3%;
+  background-color: #f5ecc6;
+}
+
+.title {
+  color: #2d3730;
+  font-family: 'Coming Soon', cursive;
 }
 
 .invocation {
