@@ -44,7 +44,10 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.spell-composition').type('Compose Spell')
   })
 
-
+  it('Should give the user a button to cast spell after typing it', () => {
+    cy.get('.send-spell').should('contain', 'Cast')
+      .get('.send-spell').click()
+  })
 
 
 
