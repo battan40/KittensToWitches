@@ -39,4 +39,13 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.send-spell').should('be.visible')
   })
 
+  it('Should be able to type text in form', () => {
+    cy.get('.title-input').type('Name Spell')
+    cy.get('.spell-composition').type('Compose Spell')
+  })
+
+
+
+
+
 })
