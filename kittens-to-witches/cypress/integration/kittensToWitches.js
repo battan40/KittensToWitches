@@ -20,7 +20,9 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.app-title').should('contain', 'Kittens')
   })
 
-
+  it('Should display loading message while swanspiration loads', () => {
+    cy.get('.loading').should('contain', 'Loading...')
+  })
 
 
 })
