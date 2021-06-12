@@ -50,12 +50,13 @@ class App extends Component{
         <h1 className='app-title'>Kittens To Witches</h1>
         {this.state.loading && <p>Loading...</p>}
 
-        {this.state.swanspiration && <Swanspiration
+        {this.state.swanspiration &&
+          <Swanspiration
           swanspiration={this.state.swanspiration}
-        />}
-        <Form
+          />}
+          <Form
           addSpell={this.addSpell}
-        />
+          />
 
         {this.state.error && <h2>{this.state.error}</h2>}
         {this.renderSpells()}
