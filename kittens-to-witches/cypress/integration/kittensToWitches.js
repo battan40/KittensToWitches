@@ -71,6 +71,9 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.spell').should('be.visible')
   })
 
-
+  it('Should have a button for favoriting the spell', () => {
+    cy.get('.love-button').should('contain', 'Keep')
+      .get('.love-button').click()
+  })
 
 })
