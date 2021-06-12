@@ -62,7 +62,9 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.spell-card').should('be.visible')
   })
 
-
+  it('Should bless the spell with the card invocation', () => {
+    cy.get('.invocation').should('contain', 'Ashe')
+  })
 
 
 
