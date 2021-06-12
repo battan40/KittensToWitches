@@ -26,10 +26,15 @@ describe('Show main page of Kittens To Witches', () => {
 
   it('Should load display for quote and image upon page load', () => {
     cy.get('.kit-card').should('be.visible')
+
   })
 
   it('Should display ron quote', () => {
     cy.get('.ronspiration').should('contain', 'I')
+  })
+
+  it('Should maintain one display of swanspiration on the main page view', () => {
+    cy.get('.ronspiration').should('have.length', 1)
   })
 
   it('Should have a place to enter spells', () => {
@@ -52,5 +57,15 @@ describe('Show main page of Kittens To Witches', () => {
   it('Should open with a message inviting users to cast a spell', () => {
     cy.get('.invitation').should('contain', 'Cast')
   })
+
+  it('Should show a new card with a spell after the user clicks the cast button', () => {
+    cy.get('.spell-card').should('be.visible')
+  })
+
+
+
+
+
+
 
 })
