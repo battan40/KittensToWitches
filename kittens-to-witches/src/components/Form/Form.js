@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchKittens, fetchSwansonQuotes } from '../../utils/apiCalls'
+
 import './form.css';
 
 class Form extends Component {
@@ -19,6 +19,7 @@ class Form extends Component {
   }
 
   sendSpell = event => {
+
     const newSpell = {
       id: this.state.id,
       title: this.state.title,
@@ -35,7 +36,7 @@ class Form extends Component {
   }
 
   render() {
-    console.log(this.state)
+
     return(
       <form className='form-box'>
         <input
@@ -56,7 +57,7 @@ class Form extends Component {
             onChange={(event) => this.handleChange(event)}
           />
 
-          <button className='send-spell' type='button' onClick={(event) => this.sendSpell(event)}>Send Spell</button>
+          <button className='send-spell' type='button' onClick={ () => this.sendSpell()}>Send Spell</button>
 
       </form>
     )
