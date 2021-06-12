@@ -1,0 +1,31 @@
+.kit-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 2em;
+  border: 3px solid #38453c;
+  padding: 10px;
+  width: 12rem;
+  box-shadow: 8px 11px 20px 5px #86898a;
+  margin: 3%;
+}
+
+.cat-pic {
+  width: 100%;
+  border-radius: 50%;
+  color: #38453c;
+}
+
+.ronspiration {
+  color: #2d3730;
+  font-weight: bold;
+  font-family: 'Coming Soon', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+
+}
