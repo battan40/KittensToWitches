@@ -11,6 +11,7 @@ class App extends Component{
   constructor() {
     super()
       this.state = {
+        loading: true,
         swanspiration: '',
         spells: [],
         error: ''
@@ -39,6 +40,7 @@ class App extends Component{
       id: 0, swanspiration, kittenFamiliar,
     }
     this.setState({ swanspiration:  organizeKitsNQuotes})
+    this.setState({loading: false})
   }
 
   render() {
@@ -46,6 +48,8 @@ class App extends Component{
     return (
       <main className='App' style={{ backgroundImage: `url(${background})`}}>
         <h1 className='app-title'>Kittens To Witches</h1>
+        {this.state.loading && <p>Loading...</p>}
+
         {this.state.swanspiration && <Swanspiration
           swanspiration={this.state.swanspiration}
         />}
