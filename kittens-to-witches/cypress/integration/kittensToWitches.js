@@ -66,7 +66,10 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.invocation').should('contain', 'Ashe')
   })
 
-
+  it('Should maintain the users spell title and description from input', () => {
+    cy.get('.title').should('be.visible')
+      .get('.spell').should('be.visible')
+  })
 
 
 
