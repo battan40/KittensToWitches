@@ -8,11 +8,7 @@
   background-color: #f5ecc6;
 }
 
-.title {
-  color: #2d3730;
-  font-family: 'Coming Soon', cursive;
-}
-
+.title,
 .invocation {
   color: #2d3730;
   font-family: 'Coming Soon', cursive;
