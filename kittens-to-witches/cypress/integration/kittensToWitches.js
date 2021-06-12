@@ -59,7 +59,8 @@ describe('Show main page of Kittens To Witches', () => {
   })
 
   it('Should show a new card with a spell after the user clicks the cast button', () => {
-    cy.get('.spell-card').should('be.visible')
+      cy.get('.send-spell').click()
+        .get('.spell-card').should('be.visible')
   })
 
   it('Should bless the spell with the card invocation', () => {
@@ -68,12 +69,32 @@ describe('Show main page of Kittens To Witches', () => {
 
   it('Should maintain the users spell title and description from input', () => {
     cy.get('.title').should('be.visible')
-      .get('.spell').should('be.visible')
+      .get('spell').should('be.visible')
   })
 
   it('Should have a button for favoriting the spell', () => {
     cy.get('.love-button').should('contain', 'Keep')
       .get('.love-button').click()
+  })
+
+})
+
+describe('Populate image on load', () => {
+
+  beforeEach(() => {
+    cy.fixture('mockKittens.json')
+      .then(mockKit => {
+        cy.intercept('GET', 'https://aws.random.cat/meow', {
+          statusCode: 200,
+          delay: 100,
+          body: mockKit
+        })
+      })
+    cy.visit('http://localhost:3000/')
+  })
+
+  it('Should be able to open to the main page', () => {
+    cy.url().should('eq', 'http://localhost:3000/')
   })
 
 })
