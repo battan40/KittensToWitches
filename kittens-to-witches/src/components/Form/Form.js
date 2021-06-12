@@ -40,7 +40,7 @@ class Form extends Component {
         <input
           className='title-input'
           type='text'
-          placeholder='Name Your Spell'
+          placeholder='Name Spell'
           name='title'
           value={this.state.title}
           onChange={event => this.handleChange(event)}
@@ -55,7 +55,7 @@ class Form extends Component {
             onChange={(event) => this.handleChange(event)}
           />
 
-          <button className='send-spell' type='button' onClick={ () => this.sendSpell()}>Send Spell</button>
+          <button className='send-spell' type='button' onClick={ () => this.sendSpell()}>Cast Spell</button>
 
       </form>
     )
