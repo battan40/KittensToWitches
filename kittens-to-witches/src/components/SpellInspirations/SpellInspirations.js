@@ -5,13 +5,13 @@ import './spellInspirations.css';
 
 const SpellInspirations = ({ spells }) => {
 
-  const cardDisplay = spells.map(spell => {
+  const spellsDisplay = spells.map(spell => {
     return (
         <SpellCard
          key={spell.id}
          id={spell.id}
-         kittenFamiliar={spell.kittenFamiliar}
-         swanspiration={spell.swanspiration}
+         title={spell.title}
+         description={spell.description}
          keep={spell.keep}
         />
       )
@@ -20,7 +20,7 @@ const SpellInspirations = ({ spells }) => {
 
   return(
     <article className='spell-box'>
-      { cardDisplay }
+      { spellsDisplay }
     </article>
   )
 }
