@@ -52,8 +52,9 @@ class App extends Component{
 
         {this.state.swanspiration &&
           <Swanspiration
-          swanspiration={this.state.swanspiration}
-          />}
+            swanspiration={this.state.swanspiration}
+            />}
+
           <Form
           addSpell={this.addSpell}
           />
