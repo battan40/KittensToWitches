@@ -24,5 +24,11 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.loading').should('contain', 'Loading...')
   })
 
+  it('Should load display for quote and image upon page load', () => {
+    cy.get('.kit-card').should('be.visible')
+  })
 
+  it('Should display ron quote', () => {
+    cy.get('ronspiration').should('be.visible')
+  })
 })
