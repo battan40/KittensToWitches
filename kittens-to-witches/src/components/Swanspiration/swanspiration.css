@@ -1,4 +1,10 @@
 .kit-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   border-radius: 2em;
   border: 3px solid #38453c;
   padding: 10px;
@@ -20,6 +26,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: auto;
+  width: fit-content;
+
 }
