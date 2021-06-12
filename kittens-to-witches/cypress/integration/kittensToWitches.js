@@ -49,6 +49,8 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.send-spell').click()
   })
 
-
+  it('Should open with a message inviting users to cast a spell', () => {
+    cy.get('.invitation').should('contain', 'Cast')
+  })
 
 })
