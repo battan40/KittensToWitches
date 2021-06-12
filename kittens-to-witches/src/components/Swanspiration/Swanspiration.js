@@ -1,7 +1,7 @@
 import React from 'react';
 import './swanspiration.css'
 
-const Swanspiration = ({ swanspiration, loading }) => {
+const Swanspiration = ({ swanspiration }) => {
   return(
     <article className='kit-card'>
       <img className='cat-pic'
