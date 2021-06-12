@@ -18,17 +18,20 @@ class Form extends Component {
     event.target.value})
   }
 
-  sendSpell = (event) => {
+  sendSpell = event => {
     const newSpell = {
       id: this.state.id,
       title: this.state.title,
       description: this.state.description
     }
     this.props.addSpell(newSpell)
+    this.clearInputs()
 
-    this.clearInputs = () => {
-      this.setState({ title: '', description: ''})
     }
+
+    clearInputs = () => {
+    this.setState({ title: '', description: ''})
+
   }
 
   render() {
@@ -39,16 +42,16 @@ class Form extends Component {
           className='title-input'
           type='text'
           placeholder='Name Your Spell'
-          name='name'
+          name='title'
           value={this.state.title}
-          onChange={(event) => this.handleChange(event)}
+          onChange={event => this.handleChange(event)}
         />
 
           <input
             className='spell-composition'
             type='text'
             placeholder='Compose Spell'
-            name='compose'
+            name='description'
             value={this.state.description}
             onChange={(event) => this.handleChange(event)}
           />
