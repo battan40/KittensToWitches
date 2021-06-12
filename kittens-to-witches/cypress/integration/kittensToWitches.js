@@ -12,6 +12,9 @@ describe('Show main page of Kittens To Witches', () => {
     cy.visit('http://localhost:3000/')
   })
 
+  it('Should be able to open to the main page', () => {
+    cy.url().should('eq', 'http://localhost:3000/')
+  })
 
 
 
