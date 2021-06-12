@@ -16,7 +16,9 @@ describe('Show main page of Kittens To Witches', () => {
     cy.url().should('eq', 'http://localhost:3000/')
   })
 
-
+  it('Should display title on the main page display', () => {
+    cy.get('.app-title').should('contain', 'Kittens')
+  })
 
 
 
