@@ -26,10 +26,9 @@ class App extends Component{
     if(this.state.spells.length) {
       return    <SpellInspirations spells={this.state.spells}/>
     } else {
-      return <h1>Cast your hearts desire</h1>
+      return <h1 className='invitation'>Cast your hearts desire</h1>
     }
   }
-
 
   componentDidMount = async () => {
     const swanspiration = await fetchSwansonQuotes()
