@@ -26,8 +26,8 @@ describe('Show main page of Kittens To Witches', () => {
 
   it('Should load display for quote and image upon page load', () => {
     cy.get('.kit-card').should('be.visible')
-
   });
+
 
   it('Should display ron quote', () => {
     cy.get('.ronspiration').should('contain', 'I')
@@ -63,19 +63,11 @@ describe('Show main page of Kittens To Witches', () => {
         .get('.spell-card').should('be.visible')
   });
 
-  it('Should bless the spell with the card invocation', () => {
-    cy.get('.invocation').should('contain', 'Ashe')
-  });
 
-  it('Should maintain the users spell title and description from input', () => {
-    cy.get('.title').should('be.visible')
-      .get('spell').should('be.visible')
-  });
 
-  it('Should have a button for favoriting the spell', () => {
-    cy.get('.love-button').should('contain', 'Keep')
-      .get('.love-button').click()
-  });
+
+
+
 
 });
 
@@ -96,5 +88,8 @@ describe('Populate image on load', () => {
   it('Should be able to open to the main page', () => {
     cy.url().should('eq', 'http://localhost:3000/')
   });
+
+
+
 
 });
