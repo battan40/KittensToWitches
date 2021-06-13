@@ -91,7 +91,7 @@ class App extends Component{
              </main>
         }}/>
 
-
+        <Route path='/404' component={ FourOFour }/>
 
       </Switch>
 
