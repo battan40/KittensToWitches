@@ -67,7 +67,12 @@ describe('Show main page of Kittens To Witches', () => {
         .get('.spell-card').should('be.visible')
   });
 
-
+  it('Should bless the spell with the card invocation', () => {
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.invocation').should('contain', 'Ashe')
+  });
 
 
 
