@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import SpellInspirations from '../SpellInspirations/SpellInspirations';
 import Form from '../Form/Form'
 import Swanspiration from '../Swanspiration/Swanspiration'
-import { Route, Switch } from 'react-router-dom'
+import About from '../About/About'
+import FourOFour from '../404/404'
+import { Route, Switch, Link } from 'react-router-dom'
 import { fetchKittens, fetchSwansonQuotes } from '../../utils/apiCalls'
 import background from '../../assets/enchantedForest.png'
 import './App.css';
@@ -57,14 +59,17 @@ class App extends Component{
     return (
       <Switch>
         <Route path='/favorites' render={() => {
-          <h1>Favorites Go Here</h1>
+          return  <h1>Favorites Go Here</h1>
         }}/>
+      
 
-        <Route path='/' render={() => {
+        <Route exact path='/' render={() => {
 
-          <main className='App' style={{ backgroundImage: `url(${background})`}}>
+          return <main className='App' style={{
+            backgroundImage: `url(${background})`}}>
             <h1 className='app-title'>Kittens To Witches</h1>
             {this.state.loading && <p className='loading'>Loading...</p>}
+
 
             {this.state.swanspiration &&
 
@@ -79,8 +84,11 @@ class App extends Component{
             {this.state.error && <h2>{this.state.error}</h2>}
             {this.renderSpells()}
 
-          </main>
+
+             </main>
         }}/>
+
+
 
       </Switch>
 
