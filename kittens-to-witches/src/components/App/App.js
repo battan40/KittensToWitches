@@ -61,7 +61,7 @@ class App extends Component{
         <Route path='/favorites' render={() => {
           return  <h1>Favorites Go Here</h1>
         }}/>
-      
+        <Route path='/about' component={ About }/>
 
         <Route exact path='/' render={() => {
 
