@@ -19,7 +19,6 @@ class Form extends Component {
   sendSpell = event => {
 
     const newSpell = {
-      id: this.state.id,
       title: this.state.title,
       description: this.state.description
     }
