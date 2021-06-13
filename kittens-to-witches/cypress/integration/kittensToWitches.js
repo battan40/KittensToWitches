@@ -28,6 +28,10 @@ describe('Show main page of Kittens To Witches', () => {
     cy.get('.kit-card').should('be.visible')
   });
 
+  it('Should have styles to make the initial card feel witchy', () => {
+    cy.get('.kit-card').should('be.visible')
+      .get('.kit-card').should('have.css', 'box-shadow')
+  })
 
   it('Should display ron quote', () => {
     cy.get('.ronspiration').should('contain', 'I')
