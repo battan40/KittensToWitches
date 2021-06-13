@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import SpellInspirations from '../SpellInspirations/SpellInspirations';
 import Form from '../Form/Form'
 import Swanspiration from '../Swanspiration/Swanspiration'
-import { Route } from 'react-router-dom'
+import About from '../About/About'
+import FourOFour from '../404/404'
+import { Route, Switch, Link } from 'react-router-dom'
 import { fetchKittens, fetchSwansonQuotes } from '../../utils/apiCalls'
 import background from '../../assets/enchantedForest.png'
 import './App.css';
@@ -55,23 +57,44 @@ class App extends Component{
   render() {
 
     return (
-      <main className='App' style={{ backgroundImage: `url(${background})`}}>
-        <h1 className='app-title'>Kittens To Witches</h1>
-        {this.state.loading && <p className='loading'>Loading...</p>}
+      <Switch>
+        <Route path='/favorites' render={() => {
+          return  <h1>Favorites Go Here</h1>
+        }}/>
+        
+        <Route path='/about' component={ About }/>
 
-        {this.state.swanspiration &&
-          <Swanspiration
-            swanspiration={this.state.swanspiration}
-            />}
+        <Route exact path='/' render={() => {
 
-          <Form
-          addSpell={this.addSpell}
-          />
+          return <main className='App' style={{
+            backgroundImage: `url(${background})`}}>
+            <h1 className='app-title'>Kittens To Witches</h1>
+            {this.state.loading && <p className='loading'>Loading...</p>}
 
-        {this.state.error && <h2>{this.state.error}</h2>}
-        {this.renderSpells()}
+            {this.state.swanspiration &&
 
-      </main>
+              <Swanspiration
+                swanspiration={this.state.swanspiration}
+                />}
+
+              <Form
+              addSpell={this.addSpell}
+              />
+
+            {this.state.error && <h2>{this.state.error}</h2>}
+            {this.renderSpells()}
+
+        <Link to='/about'>
+          <p>About Us</p>
+
+        </Link>
+             </main>
+        }}/>
+
+        <Route path='/404' component={ FourOFour }/>
+
+      </Switch>
+
     );
   }
 }
