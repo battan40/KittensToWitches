@@ -84,7 +84,10 @@ class App extends Component{
             {this.state.error && <h2>{this.state.error}</h2>}
             {this.renderSpells()}
 
+        <Link to='/about'>
+          <p>About Us</p>
 
+        </Link>
              </main>
         }}/>
 
