@@ -61,6 +61,7 @@ class App extends Component{
         <Route path='/favorites' render={() => {
           return  <h1>Favorites Go Here</h1>
         }}/>
+        
         <Route path='/about' component={ About }/>
 
         <Route exact path='/' render={() => {
@@ -69,7 +70,6 @@ class App extends Component{
             backgroundImage: `url(${background})`}}>
             <h1 className='app-title'>Kittens To Witches</h1>
             {this.state.loading && <p className='loading'>Loading...</p>}
-
 
             {this.state.swanspiration &&
 
