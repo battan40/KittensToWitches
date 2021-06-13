@@ -31,7 +31,7 @@ describe('Show main page of Kittens To Witches', () => {
   it('Should have styles to make the initial card feel witchy', () => {
     cy.get('.kit-card').should('be.visible')
       .get('.kit-card').should('have.css', 'box-shadow')
-  })
+  });
 
   it('Should display ron quote', () => {
     cy.get('.ronspiration').should('contain', 'I')
@@ -80,7 +80,7 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.send-spell').should('be.visible').click()
       .get('.spell-card').should('be.visible')
       .get('.spell-card').should('have.css', 'background-color')
-  })
+  });
 
   it('Should maintain the users spell title and description from input', () => {
     cy.get('.title-input').should('be.visible').type('words')
@@ -121,11 +121,11 @@ describe('Populate image on load', () => {
   it('Should load an alt tag with main page view', () => {
     cy.get('.cat-pic').should('be.visible')
       .get('.cat-pic').should('have.attr', 'alt')
-  })
+  });
 
   it('Should have an image with a circular presentation so user feels visited through a portal', () => {
   cy.get('.cat-pic').should('be.visible')
     .get('.cat-pic').should('have.css', 'border-radius')
-  })
+  });
 
 });
