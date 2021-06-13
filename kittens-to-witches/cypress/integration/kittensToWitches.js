@@ -74,6 +74,14 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.invocation').should('contain', 'Ashe')
   });
 
+  it('Should display different styling on the spell card for better UX', () => {
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.spell-card').should('be.visible')
+      .get('.spell-card').should('have.css', 'background-color')
+  })
+
   it('Should maintain the users spell title and description from input', () => {
     cy.get('.title-input').should('be.visible').type('words')
       .get('.spell-composition').should('be.visible').type('more words')
