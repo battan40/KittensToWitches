@@ -74,7 +74,13 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.invocation').should('contain', 'Ashe')
   });
 
-
+  it('Should maintain the users spell title and description from input', () => {
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.title').should('be.visible').should('contain', 'words')
+      .get('.spell').should('be.visible').should('contain', 'more words')
+  });
 
 
 
