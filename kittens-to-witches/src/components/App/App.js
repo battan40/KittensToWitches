@@ -11,6 +11,7 @@ class App extends Component{
   constructor() {
     super()
       this.state = {
+        keep: false,
         loading: true,
         swanspiration: '',
         spells: [],
@@ -19,16 +20,24 @@ class App extends Component{
   }
 
   addSpell = (newSpell) => {
+    newSpell.id = this.state.spells.length + 1
     console.log(newSpell)
     this.setState({ spells: [...this.state.spells, newSpell]})
   }
 
   renderSpells = () => {
     if(this.state.spells.length) {
-      return    <SpellInspirations spells={this.state.spells}/>
+      return    <SpellInspirations spells={this.state.spells} favoriteSpell={this.favoriteSpell}/>
     } else {
       return <h1 className='invitation'>Cast your hearts desire</h1>
     }
+  }
+
+  favoriteSpell = (id) => {
+    const findSpell = this.state.spells.find(spell => spell.id === id)
+      findSpell.keep = !findSpell.keep
+      this.setState({ spells: [...this.state.spells]})
+
   }
 
   componentDidMount = async () => {
@@ -37,7 +46,7 @@ class App extends Component{
     const kittenFamiliar = await fetchKittens()
       .then(data => data.file)
     const organizeKitsNQuotes = {
-      id: 0, swanspiration, kittenFamiliar,
+     swanspiration, kittenFamiliar,
     }
     this.setState({ swanspiration:  organizeKitsNQuotes})
     this.setState({loading: false})
@@ -48,7 +57,7 @@ class App extends Component{
     return (
       <main className='App' style={{ backgroundImage: `url(${background})`}}>
         <h1 className='app-title'>Kittens To Witches</h1>
-        {this.state.loading && <p>Loading...</p>}
+        {this.state.loading && <p className='loading'>Loading...</p>}
 
         {this.state.swanspiration &&
           <Swanspiration
