@@ -10,7 +10,7 @@ align-self: baseline;
   margin: 3%;
   width: 35%;
   border: 2px solid #38453c;
-  border-radius: 1.5em;
+  border-radius: .7em;
   font-size: 15px;
   padding: 1%;
   color: #38453c;
@@ -18,16 +18,17 @@ align-self: baseline;
 }
 
 .send-spell {
-  border-radius: 1.7em;
+  border-radius: .8em;
   width: fit-content;
   background-color: #fbf1e6;
   font-family: 'Coming Soon', cursive;
+
 }
 
 .spell-composition {
   width: 15rem;
   border: 2px solid #38453c;
   height: 6rem;
-  border-radius: 2em;
+  border-radius: .9em;
   background-color: #fbf1e6;
 }
