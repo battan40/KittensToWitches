@@ -89,7 +89,14 @@ describe('Populate image on load', () => {
     cy.url().should('eq', 'http://localhost:3000/')
   });
 
+  it('Should load an alt tag with main page view', () => {
+    cy.get('.cat-pic').should('be.visible')
+      .get('.cat-pic').should('have.attr', 'alt')
+  })
 
-
+  it('Should have an image with a circular presentation so user feels visited through a portal', () => {
+  cy.get('.cat-pic').should('be.visible')
+    .get('.cat-pic').should('have.css', 'border-radius')
+  })
 
 });
