@@ -82,7 +82,13 @@ describe('Show main page of Kittens To Witches', () => {
       .get('.spell').should('be.visible').should('contain', 'more words')
   });
 
-
+  it('Should have a button for favoriting the spell', () => {
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.love-button').should('contain', 'Keep')
+      .get('.love-button').click()
+  });
 
 });
 
