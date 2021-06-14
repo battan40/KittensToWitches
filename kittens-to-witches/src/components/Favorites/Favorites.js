@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SpellCard from '../SpellCard/SpellCard'
-import './spellInspirations.css';
+import { Link } from 'react-router-dom'
+import './favorites.css'
 
-const SpellInspirations = ({ spells, favoriteSpell }) => {
+const Favorites = ( { spells, favoriteSpell }) => {
 
   const spellsDisplay = spells.map(spell => {
     return (
@@ -21,13 +22,17 @@ const SpellInspirations = ({ spells, favoriteSpell }) => {
   return(
     <article className='spell-box'>
       { spellsDisplay }
+      <Link to='/'>
+      <button className='error-home'>Home</button>
+      </Link>
     </article>
   )
+
 }
 
-export default SpellInspirations;
+export default Favorites;
 
-SpellInspirations.propTypes = {
+Favorites.propTypes = {
   id: PropTypes.number,
   title: PropTypes.string,
   description: PropTypes.string,

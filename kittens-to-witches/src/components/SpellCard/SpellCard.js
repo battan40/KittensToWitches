@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './spellCard.css'
 
 const SpellCard = ({ keep, favoriteSpell, id, title, description }) => {
@@ -14,3 +15,11 @@ const SpellCard = ({ keep, favoriteSpell, id, title, description }) => {
 }
 
 export default SpellCard;
+
+SpellCard.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  keep: PropTypes.bool,
+  favoriteSpell: PropTypes.func
+}

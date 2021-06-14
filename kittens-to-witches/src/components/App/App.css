@@ -24,6 +24,23 @@
   font-size: 7vw;
 }
 
+.should-be-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.about {
+  margin-right: 50%;
+  color: #fbf1e6;
+}
+
+.favs {
+  margin-left: 40%;
+  color: #fbf1e6;
+}
+
 .invitation {
   font-family: 'Coming Soon', cursive;
   font-size: 6vw;
