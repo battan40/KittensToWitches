@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SpellCard from '../SpellCard/SpellCard'
 import './spellInspirations.css';
 
@@ -25,3 +26,11 @@ const SpellInspirations = ({ spells, favoriteSpell }) => {
 }
 
 export default SpellInspirations;
+
+SpellInspirations.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  keep: PropTypes.bool,
+  favoriteSpell: PropTypes.func
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SpellCard from '../SpellCard/SpellCard'
 import { Link } from 'react-router-dom'
 import './favorites.css'
@@ -30,3 +31,11 @@ const Favorites = ( { spells, favoriteSpell }) => {
 }
 
 export default Favorites;
+
+Favorites.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  keep: PropTypes.bool,
+  favoriteSpell: PropTypes.func
+}
