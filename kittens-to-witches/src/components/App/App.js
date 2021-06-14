@@ -4,6 +4,7 @@ import Form from '../Form/Form'
 import Swanspiration from '../Swanspiration/Swanspiration'
 import About from '../About/About'
 import FourOFour from '../404/404'
+import Favorites from '../Favorites/Favorites'
 import { Route, Switch, Link } from 'react-router-dom'
 import { fetchKittens, fetchSwansonQuotes } from '../../utils/apiCalls'
 import background from '../../assets/enchantedForest.png'
@@ -59,7 +60,10 @@ class App extends Component{
     return (
       <Switch>
         <Route path='/favorites' render={() => {
-          return  <h1>Favorites Go Here</h1>
+          const favorites = this.state.spells.filter(spell => {
+            return spell.keep
+          })
+          return  <Favorites spells={favorites}/>
         }}/>
 
         <Route path='/about' component={ About }/>
@@ -86,7 +90,9 @@ class App extends Component{
 
         <Link to='/about'>
           <p>About Us</p>
-
+        </Link>
+        <Link to='/favorites'>
+          <p>Visit Favorites</p>
         </Link>
              </main>
         }}/>
