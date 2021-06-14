@@ -11,11 +11,11 @@ describe('Show about page on route', () => {
   it('Should find a message on the 404 page', () => {
     cy.get('.error-page').should('be.visible')
       .get('.error-page').should('contain', '404')
-  })
+  });
 
   it('Should find a message on the 404 page', () => {
     cy.get('.error-page').should('be.visible')
       .get('.error-page').should('have.css', 'font-family')
-  })
+  });
 
 }
