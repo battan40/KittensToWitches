@@ -32,7 +32,7 @@ class App extends Component{
     if(this.state.spells.length) {
       return    <SpellInspirations spells={this.state.spells} favoriteSpell={this.favoriteSpell}/>
     } else {
-      return <h1 className='invitation'>Cast your hearts desire</h1>
+      return <h1 className='invitation '>Cast your hearts desire</h1>
     }
   }
 
