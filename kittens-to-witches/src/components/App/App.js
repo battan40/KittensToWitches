@@ -87,13 +87,14 @@ class App extends Component{
 
             {this.state.error && <h2>{this.state.error}</h2>}
             {this.renderSpells()}
-
+        <div className='should-be-footer'>
         <Link to='/about'>
-          <p>About Us</p>
+          <p className='about'>About Us</p>
         </Link>
         <Link to='/favorites'>
-          <p>Visit Favorites</p>
+          <p className='favs'>Visit Favorites</p>
         </Link>
+        </div>
              </main>
         }}/>
 
