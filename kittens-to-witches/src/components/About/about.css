@@ -1,0 +1,19 @@
+html {
+  background-color: #f5ecc6;
+}
+
+.about-box {
+font-family: 'Hammersmith One', sans-serif;
+padding: 8%;
+}
+
+.about-title {
+  margin-bottom: 5%;
+  color: #2d3730;
+  font-size: 2em;
+}
+
+.about-body {
+  margin-top: 8%;
+  font-size: 1.2em;
+}

@@ -26,7 +26,11 @@ describe('Show main page of Kittens To Witches', () => {
 
   it('Should load display for quote and image upon page load', () => {
     cy.get('.kit-card').should('be.visible')
+  });
 
+  it('Should have styles to make the initial card feel witchy', () => {
+    cy.get('.kit-card').should('be.visible')
+      .get('.kit-card').should('have.css', 'box-shadow')
   });
 
   it('Should display ron quote', () => {
@@ -64,16 +68,33 @@ describe('Show main page of Kittens To Witches', () => {
   });
 
   it('Should bless the spell with the card invocation', () => {
-    cy.get('.invocation').should('contain', 'Ashe')
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.invocation').should('contain', 'Ashe')
+  });
+
+  it('Should display different styling on the spell card for better UX', () => {
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.spell-card').should('be.visible')
+      .get('.spell-card').should('have.css', 'background-color')
   });
 
   it('Should maintain the users spell title and description from input', () => {
-    cy.get('.title').should('be.visible')
-      .get('spell').should('be.visible')
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.title').should('be.visible').should('contain', 'words')
+      .get('.spell').should('be.visible').should('contain', 'more words')
   });
 
   it('Should have a button for favoriting the spell', () => {
-    cy.get('.love-button').should('contain', 'Keep')
+    cy.get('.title-input').should('be.visible').type('words')
+      .get('.spell-composition').should('be.visible').type('more words')
+      .get('.send-spell').should('be.visible').click()
+      .get('.love-button').should('contain', 'Keep')
       .get('.love-button').click()
   });
 
@@ -95,6 +116,16 @@ describe('Populate image on load', () => {
 
   it('Should be able to open to the main page', () => {
     cy.url().should('eq', 'http://localhost:3000/')
+  });
+
+  it('Should load an alt tag with main page view', () => {
+    cy.get('.cat-pic').should('be.visible')
+      .get('.cat-pic').should('have.attr', 'alt')
+  });
+
+  it('Should have an image with a circular presentation so user feels visited through a portal', () => {
+  cy.get('.cat-pic').should('be.visible')
+    .get('.cat-pic').should('have.css', 'border-radius')
   });
 
 });

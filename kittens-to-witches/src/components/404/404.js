@@ -3,7 +3,10 @@ import './404.css'
 
 const FourOFour = () => {
   return(
-    <h1>404 Page Not Found</h1>
+    <section>
+      <h1 className='error-page'>404 Page Not Found</h1>
+      <button className='error-home' onClick={() => goHome()}>Home</button>
+    </section>
   )
 }
 
