@@ -20,7 +20,11 @@ describe('Show about page on route', () => {
       .get('.about-title').should('contain', 'Why')
   })
 
-
+  it('Should have a specific color for ease of viewing', () => {
+    cy.url().should('eq', 'http://localhost:3000/about')
+      .get('.about-title').should('be.visible')
+      .get('.about-title').should('have.css', 'font-size')
+  })
 
 
 })
