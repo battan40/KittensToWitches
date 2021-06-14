@@ -2,4 +2,16 @@
   padding: 25vw;
   color: #38453c;
   font-family: 'Coming Soon', cursive;
+  font-size: 5vw;
+}
+
+.error-home {
+  margin-left: 45vw;
+  margin-top: 25vw;
+  font-size: 1em;
+  padding: 1%;
+  border-radius: 1vw;
+  font-family: 'Hammersmith One', sans-serif;
+  background-color: #fffef2;
+  color: #38453c;
 }

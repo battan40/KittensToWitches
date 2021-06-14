@@ -8,7 +8,8 @@ padding: 8%;
 }
 
 .about-title {
-  margin-bottom: 5%;
+
+  margin-bottom: 7%;
   color: #2d3730;
   font-size: 2em;
 }
@@ -16,4 +17,15 @@ padding: 8%;
 .about-body {
   margin-top: 8%;
   font-size: 1.2em;
+}
+
+.about-home {
+  margin-left: 35vw;
+  margin-top: 40vw;
+  font-size: 1em;
+  padding: 1%;
+  border-radius: 1vw;
+  font-family: 'Hammersmith One', sans-serif;
+  background-color: #fffef2;
+  color: #38453c;
 }
