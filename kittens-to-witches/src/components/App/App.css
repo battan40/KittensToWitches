@@ -47,6 +47,8 @@
   color: #f5ecc6;
 }
 
+/*~~~~~~ RESPONSIVE ~~~~~~ */
+
 @media screen and (max-width: 320px) {
   .App {
     display: flex;
