@@ -101,17 +101,19 @@ To better learn React, Cypress, Router was independent of my instructors. After 
     <tr>
         <td>Functionality</td>
         <td>Framework</td>
+        <td>Library</td>
         <td>Structure</td>
         <td>Styling</td>
         <td>Testing</td>
         <td>Package Installation</td>
     </tr>
     </tr>
-        <td><img src="./src/assets/images/js-icon.png" alt="javascript" width="100" height="auto" /></td>
-        <td><img src="./src/assets/images/reactjs-logo.jpeg" alt="react" width="100" height="auto" /></td>
-        <td><img src="./src/assets/images/html-logo.png" alt="html" width="100" height="auto" /></td>
-        <td><img src="./src/assets/images/css-logo.png" alt="css" width="100" height="auto" /></td>
-        <td><img src="./src/assets/images/cypress-logo.jpeg" alt="cypress" width="100" height="auto" /></td>
-        <td><img src="./src/assets/images/npm.png" alt="npm" width="100" height="auto" /></td>
+        <td><img src="./src/assets/js-icon.png" alt="javascript" width="100" height="auto" /></td>
+        <td><img src="./src/assets/reactjs-logo.jpeg" alt="react" width="100" height="auto" /></td>
+          <td><img src="./src/assets/router-icon.png" alt="router" width="100" height="auto" /></td>
+        <td><img src="./src/assets/html-logo.png" alt="html" width="100" height="auto" /></td>
+        <td><img src="./src/assets/css-logo.png" alt="css" width="100" height="auto" /></td>
+        <td><img src="./src/assets/cypress-logo.jpeg" alt="cypress" width="100" height="auto" /></td>
+        <td><img src="./src/assets/npm.png" alt="npm" width="100" height="auto" /></td>
     </tr>
 </table>
