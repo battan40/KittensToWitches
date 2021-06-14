@@ -4,7 +4,7 @@ describe('Show about page on route', () => {
     cy.visit('http://localhost:3000/about')
   });
 
-  it('Should be able to open to the main page', () => {
+  it('Should be able to open to the about page', () => {
     cy.url().should('eq', 'http://localhost:3000/about')
   });
 
