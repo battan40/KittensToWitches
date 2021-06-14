@@ -26,5 +26,9 @@ describe('Show about page on route', () => {
       .get('.about-title').should('have.css', 'font-size')
   })
 
-
+  it('Should open to a title page', () => {
+    cy.url().should('eq', 'http://localhost:3000/about')
+      .get('.about-body').should('be.visible')
+      .get('.about-body').should('contain', 'Sometimes')
+  })
 })
