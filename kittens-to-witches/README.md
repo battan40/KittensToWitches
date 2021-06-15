@@ -62,6 +62,10 @@ You can learn more about implementing `Router` with `React` here: [React Router 
 
 5. As well, the user can click on the link at the bottom of the page to visit their favorited spells
 
+#### Preview
+
+![Swansons](./src/assets/boys-men-swansons.png?raw=true)
+
 ## Learning Goals
 
 * Further understand and implement modularity of Reacts Component structure with CSS styling
