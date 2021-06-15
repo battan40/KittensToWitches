@@ -44,10 +44,13 @@ class App extends Component{
   }
 
   componentDidMount = async () => {
+    this.setState({error: ''})
     const swanspiration = await fetchSwansonQuotes()
       .then(data => data[0])
+      .catch(err => this.setState({error: 'This swanspiration is experiencing delays.  Please try again later'}))
     const kittenFamiliar = await fetchKittens()
       .then(data => data.file)
+      .catch(err => this.setState({error: 'Whoops looks like your kitten familiar is out playing today.  Lets try this again later'}))
     const organizeKitsNQuotes = {
      swanspiration, kittenFamiliar,
     }
@@ -74,7 +77,7 @@ class App extends Component{
             backgroundImage: `url(${background})`}}>
             <h1 className='app-title'>Kittens To Witches</h1>
             {this.state.loading && <p className='loading'>Loading...</p>}
-
+            {this.state.error && <p>{this.state.error}</p>}
             {this.state.swanspiration &&
 
               <Swanspiration
