@@ -79,6 +79,10 @@ You can learn more about implementing `Router` with `React` here: [React Router 
 
 To better learn React, Cypress, Router was independent of my instructors. After carefully designing a project for an *extremely* niche audience. I did check in with my instructors to make sure I stayed on track with work/life balance goals.
 
+## Reflections
+
+Working with this project brought home user flow end to end testing for me. I have tested in a project since I started Turing perhaps in a rudimentary way.  The dynamism of cypress testing finally came through. There is literally always room to edit, DRY, or implement a technology more succinctly.  So, I know I have miles to go on all this material.  For me it is a sweet spot to truly grasp the reasons why we code the way we do, more than to simply grasp the how. 
+
 ## Future Iterations
 
 * Build my own kitten image api with its own randomizer to be imported through a fetch call
