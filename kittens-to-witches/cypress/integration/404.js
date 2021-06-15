@@ -1,7 +1,7 @@
 describe('Show about page on route', () => {
 
   beforeEach(() => {
-    cy.visit('http://localhost:3000/about')
+    cy.visit('http://localhost:3000/404')
   });
 
   it('Should be able to open to the 404 error page', () => {
@@ -18,4 +18,4 @@ describe('Show about page on route', () => {
       .get('.error-page').should('have.css', 'font-family')
   });
 
-}
+})

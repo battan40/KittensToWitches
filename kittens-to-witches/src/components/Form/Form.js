@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './form.css';
 
 class Form extends Component {
@@ -62,3 +63,7 @@ class Form extends Component {
 }
 
 export default Form;
+
+Form.propTypes = {
+  addSpell: PropTypes.func
+}

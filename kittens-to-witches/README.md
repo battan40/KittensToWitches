@@ -1,4 +1,4 @@
-## Kittens To Witches
+# Kittens To Witches
 ###### *~with Ron Swanson*
 #### Connecting You to Your *Source* of Spell Inspirations
 
@@ -19,6 +19,9 @@ Per the specs, React, Router, Asynchronous JavaScript, Cypress end to end accept
 ## Notable Features
 
 * An amazing kitten image or giphy to deliver messages from Ron Swanson
+
+ *The above is only true when the api delivers a truthy image url*
+
 * A hilarious or grimacing quote by Ron Swanson to lighten or darken the day
 * The choice to see favorited spells
 * Cypress testing to test user flows
@@ -62,6 +65,10 @@ You can learn more about implementing `Router` with `React` here: [React Router 
 
 5. As well, the user can click on the link at the bottom of the page to visit their favorited spells
 
+## Preview
+
+![Swansons](./src/assets/boys-men-swansons.png?raw=true)
+
 ## Learning Goals
 
 * Further understand and implement modularity of Reacts Component structure with CSS styling
@@ -73,6 +80,8 @@ You can learn more about implementing `Router` with `React` here: [React Router 
 To better learn React, Cypress, Router was independent of my instructors. After carefully designing a project for an *extremely* niche audience. I did check in with my instructors to make sure I stayed on track with work/life balance goals.
 
 ## Future Iterations
+
+* Build my own kitten image api with its own randomizer to be imported through a fetch call
 
 * Refactor all of modular files for best practice approaches, to ensure all user flows are accounted for
 
