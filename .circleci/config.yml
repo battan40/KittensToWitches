@@ -6,4 +6,6 @@ workflows:
     jobs:
       - cypress/install:
           build: "npm run build"
+      - cypress/start:
+        start: "npm start"
       - cypress/run
