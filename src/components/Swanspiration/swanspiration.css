@@ -1,23 +1,22 @@
 .kit-card {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  border-radius: 1.5em;
+  border-radius: .9em;
   border: 3px solid #38453c;
   padding: 10px;
-  width: 12rem;
+  width: 15rem;
   box-shadow: 8px 11px 20px 5px #86898a;
   margin: 3%;
 }
 
 .cat-pic {
-  width: 100%;
-  border-radius: 50%;
+  width: 13rem;
+  border-radius: 60rem;
   color: #38453c;
+  padding: 10px;
 }
+
 
 .ronspiration {
   color: #2d3730;

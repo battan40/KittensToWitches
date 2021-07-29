@@ -88,7 +88,7 @@ class App extends Component{
               addSpell={this.addSpell}
               />
 
-            {this.state.error && <h2>{this.state.error}</h2>}
+            {this.state.error && <p>{this.state.error}</p>}
             {this.renderSpells()}
         <div className='should-be-footer'>
         <Link to='/about'>

@@ -29,7 +29,7 @@ Per the specs, React, Router, Asynchronous JavaScript, Cypress end to end accept
 
 ## Link
 
-* We are [Published](kittensToWitches.surge.sh)
+* [Published](http://kittenstowitches.surge.sh/)
 
 ## Installation
 
@@ -44,6 +44,10 @@ Per the specs, React, Router, Asynchronous JavaScript, Cypress end to end accept
 You can learn more about creating apps using `React` and `JSX` here: [Create React App Documentation](https://create-react-app.dev/docs/getting-started/)
 
 You can learn more about implementing `Router` with `React` here: [React Router Docs](https://reactrouter.com/)
+
+Here is a resource we used to learn how to implement `Optional Chaining` with `JSX`: [MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+For a learning `Context API`, this resource could be useful: [Context API](https://www.youtube.com/watch?v=v1s_rbZbqQI)
 
 
 #### Cypress Testing
@@ -81,7 +85,7 @@ To better learn React, Cypress, Router was independent of my instructors. After 
 
 ## Reflections
 
-Working with this project brought home user flow end to end testing for me. I have tested in a project since I started Turing perhaps in a rudimentary way.  The dynamism of cypress testing finally came through. There is literally always room to edit, DRY, or implement a technology more succinctly.  So, I know I have miles to go on all this material.  For me it is a sweet spot to truly grasp the reasons why we code the way we do, more than to simply grasp the how. 
+Working with this project brought home user flow end to end testing for me. I have tested in a project since I started Turing perhaps in a rudimentary way.  The dynamism of cypress testing finally came through. There is literally always room to edit, DRY, or implement a technology more succinctly.  So, I know I have miles to go on all this material.  For me it is a sweet spot to truly grasp the reasons why we code the way we do, more than to simply grasp the how.
 
 ## Future Iterations
 
