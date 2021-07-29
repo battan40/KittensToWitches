@@ -3,7 +3,7 @@
   display: flex;
   align-items: flex-end;
   align-self: baseline;
-  margin-left: 4%;
+  margin-left: 8%;
   margin-bottom: 13px;
 
 }
@@ -37,6 +37,41 @@
   margin: 2px;
 }
 
+
+@media screen and (max-width: 1180px) {
+  .form-box {
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 1136px) {
+  .form-box {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 1123px) {
+  .form-box {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .title-input {
+    width: 40%;
+    font-size: 15px;
+    padding: 1%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .send-spell {
+    margin-right: 15%;
+  }
+
+}
 
 @media screen and (max-width: 322px) {
 
