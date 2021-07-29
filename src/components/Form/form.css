@@ -1,16 +1,17 @@
 
 .form-box {
-display: flex;
-align-items: flex-end;
-align-self: baseline;
+  display: flex;
+  align-items: flex-end;
+  align-self: baseline;
+  margin-left: 4%;
+  margin-bottom: 13px;
 
 }
 
 .title-input {
-  margin: 3%;
-  width: 35%;
+  width: 41%;
   border: 2px solid #38453c;
-  border-radius: .7em;
+  border-radius: .4em;
   font-size: 15px;
   padding: 1%;
   color: #38453c;
@@ -18,17 +19,42 @@ align-self: baseline;
 }
 
 .send-spell {
-  border-radius: .8em;
-  width: fit-content;
+  width: 20%;
+  display: flex;
+  border-radius: .4em;
   background-color: #fbf1e6;
   font-family: 'Coming Soon', cursive;
-
+  padding: 2px 0 2px 14px;
 }
 
 .spell-composition {
-  width: 15rem;
+  width: 18rem;
   border: 2px solid #38453c;
-  height: 6rem;
-  border-radius: .9em;
+  height: 8rem;
+  border-radius: .5em;
   background-color: #fbf1e6;
+  overflow: scroll;
+  margin: 2px;
+}
+
+
+@media screen and (max-width: 322px) {
+
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .send-spell {
+    width: 30%;
+    padding: 2px 2px 2px 7px;
+  }
+
+  .title-input {
+    width: 45%;
+    font-size: 18px;
+    padding: 1%;
+  }
+
 }
