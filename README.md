@@ -29,7 +29,7 @@ Per the specs, React, Router, Asynchronous JavaScript, Cypress end to end accept
 
 ## Link
 
-* We are [Published](HeadToToe.surge.sh)
+* [Published](http://kittenstowitches.surge.sh/)
 
 ## Installation
 
